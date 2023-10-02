@@ -17,17 +17,22 @@ import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePageState } from "../redux/action/handlePageChangeAction";
+import {
+  updatePageState,
+  updateVisibleFrom,
+  updateVisibleTo,
+} from "../redux/action/handlePageChangeAction";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const page = useSelector((state) => state.handlePageChange);
-
+  const page = useSelector((state) => state.handlePageChange.pageInitialState);
+  const visibleFrom = useSelector(
+    (state) => state.handlePageChange.visibleFrom
+  );
+  const visibleTo = useSelector((state) => state.handlePageChange.visibleTo);
   const id = useParams().id;
   const navigate = useNavigate();
-  
-  const [visibleFrom, setVisibleFrom] = React.useState(0);
-  const [visibleTo, setVisibleTo] = React.useState(6);
+
   const [search, setSearch] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
   const [carData, setCardata] = React.useState(CarData);
@@ -57,16 +62,16 @@ const Home = () => {
 
   useEffect(() => {
     if (id === undefined) {
-      setVisibleFrom(0);
-      setVisibleTo(6);
+      dispatch(updateVisibleFrom(0));
+      dispatch(updateVisibleTo(6));
     } else {
       var visible_To = id * 6;
       var visible_From = visible_To - 6;
-      setVisibleFrom(visible_From);
-      setVisibleTo(visible_To);
+      dispatch(updateVisibleFrom(visible_From));
+      dispatch(updateVisibleTo(visible_To));
     }
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, [id]);
+  }, [id, dispatch]);
 
   useEffect(() => {
     navigate(`/page/${page}`);
