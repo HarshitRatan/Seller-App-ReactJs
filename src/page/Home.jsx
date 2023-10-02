@@ -16,12 +16,16 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useDispatch, useSelector } from "react-redux";
+import { updatePageState } from "../redux/action/handlePageChangeAction";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const page = useSelector((state) => state.handlePageChange);
+
   const id = useParams().id;
   const navigate = useNavigate();
-
-  const [page, setPage] = React.useState(1);
+  
   const [visibleFrom, setVisibleFrom] = React.useState(0);
   const [visibleTo, setVisibleTo] = React.useState(6);
   const [search, setSearch] = React.useState("");
@@ -29,7 +33,7 @@ const Home = () => {
   const [carData, setCardata] = React.useState(CarData);
 
   const handleChange = (event, value) => {
-    setPage(value);
+    dispatch(updatePageState(value));
   };
 
   useEffect(() => {
@@ -38,7 +42,7 @@ const Home = () => {
       setCardata(CarData);
     }
     const handleSearch = setTimeout(() => {
-      setPage(1);
+      dispatch(updatePageState(1));
       const newCarData = CarData.filter((value) =>
         value.name
           .toLowerCase()
@@ -49,7 +53,7 @@ const Home = () => {
       setIsLoading(false);
     }, 500);
     return () => clearTimeout(handleSearch);
-  }, [search]);
+  }, [search, dispatch]);
 
   useEffect(() => {
     if (id === undefined) {
