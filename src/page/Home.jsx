@@ -11,6 +11,11 @@ import PaginationItem from "@mui/material/PaginationItem";
 import Stack from "@mui/material/Stack";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import InputBase from "@mui/material/InputBase";
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const Home = () => {
   const id = useParams().id;
@@ -19,13 +24,34 @@ const Home = () => {
   const [page, setPage] = React.useState(1);
   const [visibleFrom, setVisibleFrom] = React.useState(0);
   const [visibleTo, setVisibleTo] = React.useState(6);
+  const [search, setSearch] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [carData, setCardata] = React.useState(CarData);
 
   const handleChange = (event, value) => {
     setPage(value);
   };
 
   useEffect(() => {
-    console.log("id :: ", id);
+    setIsLoading(true);
+    if (search === "") {
+      setCardata(CarData);
+    }
+    const handleSearch = setTimeout(() => {
+      setPage(1);
+      const newCarData = CarData.filter((value) =>
+        value.name
+          .toLowerCase()
+          .toString()
+          .includes(search.toLowerCase().toString())
+      );
+      setCardata(newCarData);
+      setIsLoading(false);
+    }, 500);
+    return () => clearTimeout(handleSearch);
+  }, [search]);
+
+  useEffect(() => {
     if (id === undefined) {
       setVisibleFrom(0);
       setVisibleTo(6);
@@ -43,15 +69,116 @@ const Home = () => {
   }, [page, navigate]);
 
   return (
-    <Box sx={{ marginTop: "100px", marginBottom: "50px" }}>
-      <Typography variant="h4">Welcome To Home Page</Typography>
-      <Grid container spacing={2} mb={2}>
-        {CarData.slice(visibleFrom, visibleTo).map((value, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
-            <CarCard {...value} />
-          </Grid>
-        ))}
-      </Grid>
+    <Box sx={{ marginTop: "25px", marginBottom: "50px" }}>
+      <Box
+        style={{
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "center",
+          borderRadius: "1rem",
+          padding: "1rem",
+          marginBottom: "2.5rem",
+          backgroundColor: "#eaeff4",
+          boxShadow:
+            "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
+        }}
+      >
+        <Box
+          style={{
+            backgroundColor: "white",
+            borderRadius: "1rem",
+            padding: "0.2rem 0.5rem",
+            width: 400,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <InputBase
+            sx={{
+              backgroundColor: "white",
+              borderRadius: "1rem",
+              fontWeight: 500,
+              padding: "0.5rem",
+            }}
+            placeholder="Search..."
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
+          <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
+            <SearchIcon />
+          </IconButton>
+        </Box>
+        <Box style={{ marginLeft: "2rem" }}>
+          <Typography
+            variant="h5"
+            component="div"
+            style={{
+              fontSize: "0.9rem",
+              color: "#5a677e",
+              fontWeight: "600",
+              textTransform: "capitalize",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            Relevance <KeyboardArrowDownOutlinedIcon />
+          </Typography>
+        </Box>
+        <Box style={{ marginLeft: "2rem" }}>
+          <Typography
+            variant="h5"
+            component="div"
+            style={{
+              fontSize: "0.9rem",
+              color: "#5a677e",
+              fontWeight: "600",
+              textTransform: "capitalize",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            All Brands <KeyboardArrowDownOutlinedIcon />
+          </Typography>
+        </Box>
+      </Box>
+      {isLoading && (
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: 100,
+          }}
+        >
+          <CircularProgress />
+        </Box>
+      )}
+      {!isLoading && carData.length > 0 && (
+        <Grid container spacing={2} mb={2}>
+          {carData.slice(visibleFrom, visibleTo).map((value, index) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <CarCard {...value} />
+            </Grid>
+          ))}
+        </Grid>
+      )}
+      {!isLoading && carData.length === 0 && (
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: 100,
+          }}
+        >
+          No car found from this name
+        </Box>
+      )}
       <Stack
         spacing={2}
         style={{
@@ -78,6 +205,7 @@ const Home = () => {
           {page} from 10
         </Typography>
         <Pagination
+          disabled={search.length > 0 ? true : false}
           count={10}
           page={page}
           onChange={handleChange}
