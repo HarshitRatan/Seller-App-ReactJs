@@ -35,6 +35,7 @@ const Home = () => {
       setVisibleFrom(visible_From);
       setVisibleTo(visible_To);
     }
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [id]);
 
   useEffect(() => {
