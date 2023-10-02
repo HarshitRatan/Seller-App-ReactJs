@@ -10,12 +10,14 @@ import PropaneTankOutlinedIcon from "@mui/icons-material/PropaneTankOutlined";
 import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 import CloudCircleOutlinedIcon from "@mui/icons-material/CloudCircleOutlined";
 
-const CarCard = () => {
+const CarCard = (props) => {
   return (
     <Card
       sx={{
-        width: "25rem",
-        height: "100%",
+        margin: "auto",
+        position: "relative",
+        maxWidth: 400,
+        maxHeight: 480,
         backgroundColor: "#f2f5fc",
         borderRadius: "1rem",
         padding: "0.5rem",
@@ -29,7 +31,7 @@ const CarCard = () => {
     >
       <CardMedia
         component="img"
-        image="https://cars.tatamotors.com/images/punch/punch-suv-home-mob.png"
+        image={props.image}
         alt="car"
         style={{
           objectFit: "cover",
@@ -44,16 +46,19 @@ const CarCard = () => {
           justifyContent="space-between"
           alignItems="center"
           spacing={2}
-          // style={{ border: "2px solid red" }}
         >
           <Typography
             variant="h5"
             component="div"
             style={{
               fontWeight: 700,
+              textTransform: "capitalize",
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
-            Toyota RAV4
+            {props.name}
           </Typography>
           <Typography
             variant="h5"
@@ -64,12 +69,12 @@ const CarCard = () => {
               borderRadius: "1rem",
               fontSize: "0.9rem",
               fontWeight: 600,
+              textTransform: "capitalize",
             }}
           >
-            2021
+            {props.year}
           </Typography>
         </Stack>
-
         <Grid
           container
           spacing={2}
@@ -99,9 +104,10 @@ const CarCard = () => {
                 fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
+                textTransform: "capitalize",
               }}
             >
-              4 People
+              {props.people} People
             </Typography>
           </Grid>
           <Grid
@@ -126,9 +132,10 @@ const CarCard = () => {
                 fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
+                textTransform: "capitalize",
               }}
             >
-              Gasoline
+              {props.petrol}
             </Typography>
           </Grid>
         </Grid>
@@ -162,9 +169,10 @@ const CarCard = () => {
                 fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
+                textTransform: "capitalize",
               }}
             >
-              7.1km / liter
+              {props.mileage} / liter
             </Typography>
           </Grid>
           <Grid
@@ -189,9 +197,10 @@ const CarCard = () => {
                 fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
+                textTransform: "capitalize",
               }}
             >
-              Automatic
+              {props.type}
             </Typography>
           </Grid>
         </Grid>
@@ -210,7 +219,7 @@ const CarCard = () => {
               fontWeight: 700,
             }}
           >
-            $440 /{" "}
+            ${props.rent} /{" "}
             <span style={{ fontSize: "1rem", fontWeight: 600 }}>month</span>
           </Typography>
           <Stack
