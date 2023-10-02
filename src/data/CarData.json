@@ -1,6 +1,6 @@
 [
   {
-    "image": "images/1.jpg",
+    "image": "/images/1.jpg",
     "name": "toyota RAV4",
     "year": "2021",
     "people": 4,
@@ -10,7 +10,7 @@
     "rent": 440
   },
   {
-    "image": "images/2.jpg",
+    "image": "/images/2.jpg",
     "name": "BMW 3 series",
     "year": "2019",
     "people": 4,
@@ -20,7 +20,7 @@
     "rent": 350
   },
   {
-    "image": "images/3.jpg",
+    "image": "/images/3.jpg",
     "name": "volkswagen T-Cross",
     "year": "2020",
     "people": 4,
@@ -30,7 +30,7 @@
     "rent": 400
   },
   {
-    "image": "images/4.jpg",
+    "image": "/images/4.jpg",
     "name": "cadillac escalade",
     "year": "2020",
     "people": 4,
@@ -40,7 +40,7 @@
     "rent": 620
   },
   {
-    "image": "images/5.jpg",
+    "image": "/images/5.jpg",
     "name": "BMW 4 series GTI",
     "year": "2021",
     "people": 4,
@@ -50,7 +50,7 @@
     "rent": 530
   },
   {
-    "image": "images/6.jpg",
+    "image": "/images/6.jpg",
     "name": "BMW 4 series",
     "year": "2019",
     "people": 4,
@@ -60,7 +60,7 @@
     "rent": 490
   },
   {
-    "image": "images/7.jpg",
+    "image": "/images/7.jpg",
     "name": "Tata Nexon",
     "year": "2019",
     "people": 4,
@@ -70,7 +70,7 @@
     "rent": 270
   },
   {
-    "image": "images/8.jpg",
+    "image": "/images/8.jpg",
     "name": "Tata Nexon",
     "year": "2019",
     "people": 4,
@@ -80,7 +80,7 @@
     "rent": 270
   },
   {
-    "image": "images/9.jpg",
+    "image": "/images/9.jpg",
     "name": "Hyundai Exter",
     "year": "2019",
     "people": 4,
@@ -90,7 +90,7 @@
     "rent": 240
   },
   {
-    "image": "images/10.jpg",
+    "image": "/images/10.jpg",
     "name": "Maruti Suzuki Fronx",
     "year": "2019",
     "people": 4,
@@ -100,7 +100,7 @@
     "rent": 570
   },
   {
-    "image": "images/11.jpg",
+    "image": "/images/11.jpg",
     "name": "Mahindra Thar",
     "year": "2019",
     "people": 4,
@@ -110,7 +110,7 @@
     "rent": 350
   },
   {
-    "image": "images/12.jpg",
+    "image": "/images/12.jpg",
     "name": "Mahindra Scorpio N",
     "year": "2019",
     "people": 4,
@@ -120,7 +120,7 @@
     "rent": 280
   },
   {
-    "image": "images/13.jpg",
+    "image": "/images/13.jpg",
     "name": "Hyundai Creta",
     "year": "2019",
     "people": 4,
@@ -130,7 +130,7 @@
     "rent": 720
   },
   {
-    "image": "images/14.jpg",
+    "image": "/images/14.jpg",
     "name": "Honda Elevate",
     "year": "2019",
     "people": 4,
@@ -140,7 +140,7 @@
     "rent": 880
   },
   {
-    "image": "images/15.jpg",
+    "image": "/images/15.jpg",
     "name": "Mahindra XUV700",
     "year": "2019",
     "people": 4,
@@ -150,7 +150,7 @@
     "rent": 546
   },
   {
-    "image": "images/16.jpg",
+    "image": "/images/16.jpg",
     "name": "Toyota Urban Cruiser Hyryder",
     "year": "2019",
     "people": 4,
@@ -160,7 +160,7 @@
     "rent": 285
   },
   {
-    "image": "images/17.jpg",
+    "image": "/images/17.jpg",
     "name": "MG Hector",
     "year": "2019",
     "people": 4,
@@ -170,7 +170,7 @@
     "rent": 275
   },
   {
-    "image": "images/18.jpg",
+    "image": "/images/18.jpg",
     "name": "Tata Harrier",
     "year": "2019",
     "people": 4,
@@ -180,7 +180,7 @@
     "rent": 263
   },
   {
-    "image": "images/19.jpg",
+    "image": "/images/19.jpg",
     "name": "Nissan Magnite",
     "year": "2019",
     "people": 4,
@@ -190,7 +190,7 @@
     "rent": 250
   },
   {
-    "image": "images/20.jpg",
+    "image": "/images/20.jpg",
     "name": "Toyota Fortuner",
     "year": "2019",
     "people": 4,
@@ -200,7 +200,7 @@
     "rent": 240
   },
   {
-    "image": "images/21.jpg",
+    "image": "/images/21.jpg",
     "name": "Skoda Kushaq",
     "year": "2019",
     "people": 4,
@@ -210,7 +210,7 @@
     "rent": 220
   },
   {
-    "image": "images/22.jpg",
+    "image": "/images/22.jpg",
     "name": "Maruti Suzuki XL6",
     "year": "2019",
     "people": 4,
@@ -220,7 +220,7 @@
     "rent": 270
   },
   {
-    "image": "images/23.jpg",
+    "image": "/images/23.jpg",
     "name": "Toyota Innova Hycross",
     "year": "2019",
     "people": 4,
@@ -230,7 +230,7 @@
     "rent": 350
   },
   {
-    "image": "images/24.jpg",
+    "image": "/images/24.jpg",
     "name": "Volkswagen Taigun",
     "year": "2019",
     "people": 4,
@@ -240,8 +240,8 @@
     "rent": 400
   },
   {
-    "image": "images/1.jpg",
-    "name": "toyota RAV4",
+    "image": "/images/1.jpg",
+    "name": "toyota SUV52",
     "year": "2021",
     "people": 4,
     "petrol": "hybrid",
@@ -250,8 +250,8 @@
     "rent": 440
   },
   {
-    "image": "images/2.jpg",
-    "name": "BMW 3 series",
+    "image": "/images/2.jpg",
+    "name": "BMW 7 series",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -260,8 +260,8 @@
     "rent": 350
   },
   {
-    "image": "images/3.jpg",
-    "name": "volkswagen T-Cross",
+    "image": "/images/3.jpg",
+    "name": "T-SCross",
     "year": "2020",
     "people": 4,
     "petrol": "petrol",
@@ -270,8 +270,8 @@
     "rent": 400
   },
   {
-    "image": "images/4.jpg",
-    "name": "cadillac escalade",
+    "image": "/images/4.jpg",
+    "name": "escalade ts-40",
     "year": "2020",
     "people": 4,
     "petrol": "Gasoline",
@@ -280,8 +280,8 @@
     "rent": 620
   },
   {
-    "image": "images/5.jpg",
-    "name": "BMW 4 series GTI",
+    "image": "/images/5.jpg",
+    "name": "BMW 9 series",
     "year": "2021",
     "people": 4,
     "petrol": "petrol",
@@ -290,8 +290,8 @@
     "rent": 530
   },
   {
-    "image": "images/6.jpg",
-    "name": "BMW 4 series",
+    "image": "/images/6.jpg",
+    "name": "BMW GTI",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -300,8 +300,8 @@
     "rent": 490
   },
   {
-    "image": "images/7.jpg",
-    "name": "Tata Nexon",
+    "image": "/images/7.jpg",
+    "name": "Tata punch",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -310,8 +310,8 @@
     "rent": 270
   },
   {
-    "image": "images/8.jpg",
-    "name": "Tata Nexon",
+    "image": "/images/8.jpg",
+    "name": "Tata Nexon - XM",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -320,8 +320,8 @@
     "rent": 270
   },
   {
-    "image": "images/9.jpg",
-    "name": "Hyundai Exter",
+    "image": "/images/9.jpg",
+    "name": "Hyundai Exter - XS",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -330,8 +330,8 @@
     "rent": 240
   },
   {
-    "image": "images/10.jpg",
-    "name": "Maruti Suzuki Fronx",
+    "image": "/images/10.jpg",
+    "name": "Maruti Suzuki Fronx - MS",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -340,8 +340,8 @@
     "rent": 570
   },
   {
-    "image": "images/11.jpg",
-    "name": "Mahindra Thar",
+    "image": "/images/11.jpg",
+    "name": "Mahindra Thar 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -350,8 +350,8 @@
     "rent": 350
   },
   {
-    "image": "images/12.jpg",
-    "name": "Mahindra Scorpio N",
+    "image": "/images/12.jpg",
+    "name": "Mahindra Scorpio N 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -360,8 +360,8 @@
     "rent": 280
   },
   {
-    "image": "images/13.jpg",
-    "name": "Hyundai Creta",
+    "image": "/images/13.jpg",
+    "name": "Hyundai Creta 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -370,8 +370,8 @@
     "rent": 720
   },
   {
-    "image": "images/14.jpg",
-    "name": "Honda Elevate",
+    "image": "/images/14.jpg",
+    "name": "Honda Elevate GTX",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -380,8 +380,8 @@
     "rent": 880
   },
   {
-    "image": "images/15.jpg",
-    "name": "Mahindra XUV700",
+    "image": "/images/15.jpg",
+    "name": "Mahindra XUV700 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -390,8 +390,8 @@
     "rent": 546
   },
   {
-    "image": "images/16.jpg",
-    "name": "Toyota Urban Cruiser Hyryder",
+    "image": "/images/16.jpg",
+    "name": "Cruiser Hyryder 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -400,8 +400,8 @@
     "rent": 285
   },
   {
-    "image": "images/17.jpg",
-    "name": "MG Hector",
+    "image": "/images/17.jpg",
+    "name": "MG Hector XS",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -410,8 +410,8 @@
     "rent": 275
   },
   {
-    "image": "images/18.jpg",
-    "name": "Tata Harrier",
+    "image": "/images/18.jpg",
+    "name": "Tata Harrier - SM",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -420,8 +420,8 @@
     "rent": 263
   },
   {
-    "image": "images/19.jpg",
-    "name": "Nissan Magnite",
+    "image": "/images/19.jpg",
+    "name": "Nissan Magnite XL",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -430,8 +430,8 @@
     "rent": 250
   },
   {
-    "image": "images/20.jpg",
-    "name": "Toyota Fortuner",
+    "image": "/images/20.jpg",
+    "name": "Toyota Fortuner 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -440,8 +440,8 @@
     "rent": 240
   },
   {
-    "image": "images/21.jpg",
-    "name": "Skoda Kushaq",
+    "image": "/images/21.jpg",
+    "name": "Skoda Kushaq 2WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -450,8 +450,8 @@
     "rent": 220
   },
   {
-    "image": "images/22.jpg",
-    "name": "Maruti Suzuki XL6",
+    "image": "/images/22.jpg",
+    "name": "Maruti XL6",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -460,8 +460,8 @@
     "rent": 270
   },
   {
-    "image": "images/23.jpg",
-    "name": "Toyota Innova Hycross",
+    "image": "/images/23.jpg",
+    "name": "Toyota Innova Hycross SM",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -470,8 +470,8 @@
     "rent": 350
   },
   {
-    "image": "images/24.jpg",
-    "name": "Volkswagen Taigun",
+    "image": "/images/24.jpg",
+    "name": "Volkswagen Taigun 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -480,8 +480,8 @@
     "rent": 400
   },
   {
-    "image": "images/7.jpg",
-    "name": "Tata Nexon",
+    "image": "/images/7.jpg",
+    "name": "Tata Nexon XMX",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -490,8 +490,8 @@
     "rent": 270
   },
   {
-    "image": "images/8.jpg",
-    "name": "Tata Nexon",
+    "image": "/images/8.jpg",
+    "name": "Tata Punch EV",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -500,8 +500,8 @@
     "rent": 270
   },
   {
-    "image": "images/9.jpg",
-    "name": "Hyundai Exter",
+    "image": "/images/9.jpg",
+    "name": "Hyundai Exter MD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -510,8 +510,8 @@
     "rent": 240
   },
   {
-    "image": "images/10.jpg",
-    "name": "Maruti Suzuki Fronx",
+    "image": "/images/10.jpg",
+    "name": "Maruti Suzuki Fronx MD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -520,8 +520,8 @@
     "rent": 570
   },
   {
-    "image": "images/11.jpg",
-    "name": "Mahindra Thar",
+    "image": "/images/11.jpg",
+    "name": "Mahindra Thar RWD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -530,8 +530,8 @@
     "rent": 350
   },
   {
-    "image": "images/12.jpg",
-    "name": "Mahindra Scorpio N",
+    "image": "/images/12.jpg",
+    "name": "Mahindra Scorpio N RWD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -540,8 +540,8 @@
     "rent": 280
   },
   {
-    "image": "images/13.jpg",
-    "name": "Hyundai Creta",
+    "image": "/images/13.jpg",
+    "name": "Hyundai Creta RWD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -550,8 +550,8 @@
     "rent": 720
   },
   {
-    "image": "images/14.jpg",
-    "name": "Honda Elevate",
+    "image": "/images/14.jpg",
+    "name": "Honda RWD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -560,8 +560,8 @@
     "rent": 880
   },
   {
-    "image": "images/15.jpg",
-    "name": "Mahindra XUV700",
+    "image": "/images/15.jpg",
+    "name": "Mahindra XUV700 RWD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -570,8 +570,8 @@
     "rent": 546
   },
   {
-    "image": "images/16.jpg",
-    "name": "Toyota Urban Cruiser Hyryder",
+    "image": "/images/16.jpg",
+    "name": "Toyota Urban Cruiser 4WD",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -580,8 +580,8 @@
     "rent": 285
   },
   {
-    "image": "images/17.jpg",
-    "name": "MG Hector",
+    "image": "/images/17.jpg",
+    "name": "MG Hector MS",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
@@ -590,8 +590,8 @@
     "rent": 275
   },
   {
-    "image": "images/18.jpg",
-    "name": "Tata Harrier",
+    "image": "/images/18.jpg",
+    "name": "Tata Harrier XMR",
     "year": "2019",
     "people": 4,
     "petrol": "Gasoline",
