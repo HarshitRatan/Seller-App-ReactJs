@@ -8,7 +8,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import PropaneTankOutlinedIcon from "@mui/icons-material/PropaneTankOutlined";
 import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
-import CloudCircleOutlinedIcon from '@mui/icons-material/CloudCircleOutlined';
+import CloudCircleOutlinedIcon from "@mui/icons-material/CloudCircleOutlined";
 
 const CarCard = () => {
   return (
@@ -73,7 +73,9 @@ const CarCard = () => {
         <Grid
           container
           spacing={2}
-          style={{ marginTop: "0.8rem" }}
+          style={{
+            marginTop: "0.5rem",
+          }}
         >
           <Grid
             item
@@ -84,20 +86,17 @@ const CarCard = () => {
               alignItems: "center",
             }}
           >
-            <IconButton
-              size="medium"
+            <GroupOutlinedIcon
               style={{
                 color: "rgb(72, 152, 237)",
                 marginRight: "0.5rem",
               }}
-            >
-              <GroupOutlinedIcon />
-            </IconButton>
+            />
             <Typography
               variant="h5"
               component="div"
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
               }}
@@ -114,20 +113,17 @@ const CarCard = () => {
               alignItems: "center",
             }}
           >
-            <IconButton
-              size="medium"
+            <PropaneTankOutlinedIcon
               style={{
                 color: "rgb(72, 152, 237)",
                 marginRight: "0.5rem",
               }}
-            >
-              <PropaneTankOutlinedIcon />
-            </IconButton>
+            />
             <Typography
               variant="h5"
               component="div"
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
               }}
@@ -140,7 +136,9 @@ const CarCard = () => {
         <Grid
           container
           spacing={2}
-          style={{ marginTop: "0.8rem" }}
+          style={{
+            marginTop: 0,
+          }}
         >
           <Grid
             item
@@ -151,20 +149,17 @@ const CarCard = () => {
               alignItems: "center",
             }}
           >
-            <IconButton
-              size="medium"
+            <SpeedOutlinedIcon
               style={{
                 color: "rgb(72, 152, 237)",
                 marginRight: "0.5rem",
               }}
-            >
-              <SpeedOutlinedIcon />
-            </IconButton>
+            />
             <Typography
               variant="h5"
               component="div"
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
               }}
@@ -181,20 +176,17 @@ const CarCard = () => {
               alignItems: "center",
             }}
           >
-            <IconButton
-              size="medium"
+            <CloudCircleOutlinedIcon
               style={{
                 color: "rgb(72, 152, 237)",
                 marginRight: "0.5rem",
               }}
-            >
-              <CloudCircleOutlinedIcon />
-            </IconButton>
+            />
             <Typography
               variant="h5"
               component="div"
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 color: "#5a677e",
                 fontWeight: "600",
               }}
@@ -204,7 +196,7 @@ const CarCard = () => {
           </Grid>
         </Grid>
 
-        <Divider style={{ margin: "2rem 0" }} />
+        <Divider style={{ margin: "1.2rem 0" }} />
         <Stack
           direction="row"
           justifyContent="space-between"
